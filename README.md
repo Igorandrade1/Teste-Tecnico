@@ -1,3 +1,27 @@
+
+Olá, tudo bem?
+
+Devido ao tempo limitado que tive por conta do trabalho e das minhas atividades acadêmicas, não consegui criar algo extremamente robusto. No entanto, entendi que a ideia era desenvolver uma solução para facilitar meu dia a dia.
+
+Uma dificuldade recorrente para mim é esquecer de pagar as faturas de cartões de crédito. Por isso, criei uma automação que utiliza a API do Office 365, via UiPath, para se conectar e ler minha caixa de entrada. A automação obtém a lista de e-mails e aplica um filtro, que pode ser ajustado conforme necessário.
+
+No meu caso, a automação filtra e-mails contendo palavras-chave relacionadas à fatura e também verifica a data, garantindo que apenas a fatura do mês corrente seja considerada.
+
+A automação lê o e-mail e extrai o texto do corpo. Utilizei expressões regulares para obter a data de vencimento e o valor do pagamento. Para meu caso específico, funciona bem, e acredito que pode ser adaptado para outros cenários com características semelhantes.
+
+Além disso, a automação gera um aviso em formato HTML e me envia por e-mail, ajudando-me a lembrar de pagar minhas faturas.
+
+Utilizei o ReFramework do UiPath, modificando-o para funcionar de forma linear e alterando as atividades e propriedades do "Get Transaction Data" e "Process Transaction".
+
+Estou disponibilizando o projeto no Git e também enviarei em formato zip. Agradeço a atenção!
+
+
+
+
+
+
+
+
 ### Documentation is included in the Documentation folder ###
 
 
