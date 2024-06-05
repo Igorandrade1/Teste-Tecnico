@@ -1,0 +1,195 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LoginSystem" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="845.3333333333334,1718" sap2010:WorkflowViewState.IdRef="LoginSystem_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LoginSystem" sap:VirtualizedContainerService.HintSize="512,1653.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: SABESP - Agência Virtual" sap:VirtualizedContainerService.HintSize="450,1565.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6d5709df-ffc3-48fe-9535-4c0815f3981a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,1323.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Password" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT _br_com_engdb_agv…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="6d5709df-ffc3-48fe-9535-4c0815f3981a" Text="14047539821" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://agenciavirtual2.sabesp.com.br/web/guest/home" CVScreenId="c2306977-00a5-4cc9-957c-c85d79ae9d5c" CvElementArea="1082, 183, 238, 23" CvTextArea="1185, 188, 30, 13" CvTextArgument="CPF" CvType="Button" DesignTimeRectangle="1084, 237, 234, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='_br_com_engdb_agv_login_portlet_LoginPortlet_login' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='_br_com_engdb_agv_login_portlet_LoginPortlet_login' tag='INPUT' type='text' class='field clearable col-12 text-center CPF-input-login form-control' placeholder='CPF' aaname=' &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;CPF &amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="15ba00bb-1c0d-4cca-99c6-e789f8828c4c" InformativeScreenshot="8089ff7965b580914aacbeff1a11b1a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SABESP - Agência Virtual' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWbdSB/COA0aR2Pw4yYFpCAAAAAACAAAAAAADZgAAwAAAABAAAADfDUhWa1RCcASxXHsL/m2SAAAAAASAAACgAAAAEAAAAGV7Kd1IVzA/Aii1K4raaNgQAAAAbH8YgtbEYH+h4cBXGMOaWRQAAAA5WOLdIqoAyREKeH08fp9ffdFUAg==" Result="[Password]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT _br_com_engdb_agv…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="6d5709df-ffc3-48fe-9535-4c0815f3981a" Text="[Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://agenciavirtual2.sabesp.com.br/web/guest/home" CVScreenId="146325c5-0ff7-4478-b581-e31a95fc0d75" CvElementArea="1082, 259, 237, 24" CvTextArea="1175, 264, 51, 13" CvTextArgument="SENHA" CvType="Button" DesignTimeRectangle="1084, 261, 234, 20" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='_br_com_engdb_agv_login_portlet_LoginPortlet_password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='_br_com_engdb_agv_login_portlet_LoginPortlet_password' tag='INPUT' type='password' class='field col-12 text-center SENHA-input-login form-control' placeholder='SENHA' aaname=' &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Senha &amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="a07d39ca-ff92-4507-a247-7a7e55d4d00d" InformativeScreenshot="fed5c95e27024495b65fbbebb2ea00f7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SABESP - Agência Virtual' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Nao sou um robo'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d5709df-ffc3-48fe-9535-4c0815f3981a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LeyogEmAAAAAFQnEUI4UYaCroCSufB5dEJe8Jg6&amp;co=aHR0cHM6Ly9hZ2VuY2lhdmlydHVhbDIuc2FiZXNwLmNvbS5icjo0NDM.&amp;hl=pt-PT&amp;v=DH3nyJMamEclyfe-nztbfV8S&amp;size=normal&amp;sa=LOGIN&amp;cb=fuww6b7dvef1" CVScreenId="d7fe5812-c465-41cd-8412-dd7993bc6ca9" CvElementArea="1089, 381, 25, 25" CvType="CheckBox" DesignTimeRectangle="1092, 386, 28, 28" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl name='a-vbi18xa97six' tag='IFRAME' /&gt;&lt;webctrl aria-role='presentation' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='a-vbi18xa97six' tag='IFRAME' /&gt;&lt;webctrl aria-role='presentation' tag='DIV' type='' class='recaptcha-checkbox-border' aaname='' /&gt;" Guid="ca1a774c-5b9c-440e-a945-579798806d5d" InformativeScreenshot="6b569fb7bd63c8363fbf31c7c939e420.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SABESP - Agência Virtual' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="d7fe5812-c465-41cd-8412-dd7993bc6ca9" CvTextArea="1121, 387, 87, 12" CvTextArgument="Nao sou um robo" CvType="Text" DesignTimeRectangle="1121, 387, 87, 12" ElementType="Text" Guid="08813d95-4abd-4be3-a9eb-fbcc6cabb858" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ACESSAR'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6d5709df-ffc3-48fe-9535-4c0815f3981a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://agenciavirtual2.sabesp.com.br/web/guest/home" CVScreenId="bfda9bc8-a557-49af-97d5-e5f8e654cb28" CvElementArea="1084, 284, 234, 27" CvTextArea="1164, 291, 72, 13" CvTextArgument="ACESSAR" CvType="Button" DesignTimeRectangle="1166, 290, 69, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='_br_com_engdb_agv_login_portlet_LoginPortlet_riha' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='_br_com_engdb_agv_login_portlet_LoginPortlet_riha' tag='SPAN' type='' class='lfr-btn-label' aaname='ACESSAR' check:innerText='ACESSAR' /&gt;" Guid="5de435d4-1880-4ebf-a10a-e46be70c58b4" InformativeScreenshot="d19aa1fe95c7fdafe46acb0e7f05d985.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SABESP - Agência Virtual' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="bfda9bc8-a557-49af-97d5-e5f8e654cb28" CvElementArea="1084, 284, 234, 27" CvTextArea="1164, 291, 72, 13" CvTextArgument="ACESSAR" CvType="Button" DesignTimeRectangle="1084, 285, 234, 26" ElementType="Button" FullSelectorArgument="&lt;webctrl id='_br_com_engdb_agv_login_portlet_LoginPortlet_riha' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='_br_com_engdb_agv_login_portlet_LoginPortlet_riha' tag='BUTTON' type='submit' class='btn btn-primary col-12 btn-acessar-login btn-primary' aaname=' &amp;#x9;      &amp;#x9;ACESSAR      &amp;#x9; &amp;#x9;&amp;#x9;' check:innerText='ACESSAR' /&gt;" Guid="c5acda27-d520-42ed-8301-b4c0d668294a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;fim&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -8, 1616, 876" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAORSURBVFhHzVdJTBRBFPWGys24G3ejMRg1xvUgN08iLiQGUREYkV3ZQUDUxIOJCiKoKG4k7srRaDQmno0gDDNgBGaGRaNEJEEigRnmW6+6a+xuup12iIM/eUnPn9+/XlW9/6t6UqilIYLBxuBloCABY71jCAcBu+ycCLwBgWDOXIs+EFA5pyY0UEhcvQrw/ZVfk/MP6FcRQLJ5GU2040Ib7b7YzhFZ1kbzj1o58Cz8ESxmbnoTLcqy0s5yyQdsP99Gs9OazJJQEwiJr6d9lx30c3iURjxejmG3lxJqXBR/3cmfhR8xURXtlF7bRe7R3/6BIQ+fAHIpcxtAQ4AtHwbyekll6bWdlHK7U/4lGRuTYhjZ3PvdskcykIiq6OC5lLkNYJ5AcrAIHLrm5MmVhtkn3XLJvyRDTHSVg7LvqQlgm/YwLQREYAoT4Yo8G+U96Kaixz0cBQ+7KazARmGFNv4s/IhZnttM60paqOTpJyqtk5DPYpblNNNkpgGQUEJHmGoCqIKFmVbaf8VBcWwlgANXHbSYKR3As/DHsJgFx6zSQBpgIiB2+IaLI/Gmi/ZWdtCMlEYtibFbcJAN4mb7CB0IIIGFJcKyCx9ioAG8o8wBgEDly698SxAL6x1w08bSVk5YEWtehHpVEFvtNCRQ/bpXjpTs+6CHtpweBwG9KvgnBGKrHeTRlAEqANugNMRAK0YEql6pCXz74aZNJ/0QgAiXZDXzVTjCBgQsNU6uaigeRFLvdHKA0NJsfbWDwIbSFl+OJAZ02JmpfkRoRACD6w0E36pCO98eQQxiRXWsPxEAASTV24I0lhj/KWNFPPqB0tCIIsvaqeKFVAXCTG0BEuqJMPNulyGBwkc9cpRkaMXohFoNjKsKgkpArxFhb40I5MiHkYgdGvHy47j8eQCNCCLEBQMHkmijaLu+3q4BfBAo+oFo0dFVHfyisqbI7vNhVbEq0/21YgAkMDMlMNBqlrD4SY/v0DnOlh4H19piO98GcUjhdEQlhZ/5QMWyD+9ByHMYMeRXjDeWgB5AAgmUhkIxOo53sSvaJfksENY36KbNp/xsgRFAIINdvZQGAkYXkoBFaIT/gkAiE6TZSyluxueefeEk4cP/n/tHeHcMiACEg/Zq9lo+K62RVubbfD6syLazH2la8nttbnMEAL3qgE/Xz+JxICl9mpkLcAIT/mnWqnEGE/zjdCI+z0cZ3oZaGrb+Aq4kshF5cG51AAAAAElFTkSuQmCC" InformativeScreenshot="af7112bbc65a7b983673e7aa9af52ab7.jpg" Selector="&lt;html app='chrome.exe' title='SABESP - Agência Virtual' /&gt;" Title="SABESP - Agência Virtual" Url="https://agenciavirtual2.sabesp.com.br/redirect-agv?servico=fatura-completa&amp;tipo=consumo-pagamento" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
