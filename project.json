@@ -1,7 +1,7 @@
 {
-  "name": "WaterBillControl-RPA",
+  "name": "InvoiceAutomationRPA",
   "projectId": "3a221ee4-4e4b-4c92-8f3f-46d08267983e",
-  "description": "Automation developed to automate and help me control water bill amounts",
+  "description": "Automation developed to automate and help me control invoice amounts",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.3-preview]",

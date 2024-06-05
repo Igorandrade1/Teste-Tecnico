@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>845.3333333333334,1512.6666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>830,1470</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -125,9 +125,10 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This sequence reads the email inbox, and filters by looking for only invoices with a date higher than the 1st of the current month, and that have &quot;invoice&quot; in the subject of the email&#xA;" DisplayName="ReadEmail" sap:VirtualizedContainerService.HintSize="512,1448" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This sequence reads the email inbox, and filters by looking for only invoices with a date higher than the 1st of the current month, and that have &quot;invoice&quot; in the subject of the email&#xA;" DisplayName="ReadEmail" sap:VirtualizedContainerService.HintSize="512,1405" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(umm:Office365Message)" Name="EmailMessages" />
       <Variable x:TypeArguments="x:String" Name="AuditLog" />
@@ -139,7 +140,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umam:GetEmailListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" sap2010:Annotation.AnnotationText="obtains emails related to the applied filters.&#xD;&#xA;&#xD;&#xA;Here you can feel free to add your own filters and your email.&#xD;&#xA;&#xD;&#xA;Remembering that it is necessary to connect UiPath to Outlook and obtain authorization.&#xD;&#xA;&#xD;&#xA;It is possible to do this right here in the activity&#xD;&#xA;&#xD;&#xA;In Microsoft Outlook 365, just click on the gear and manage your connections&#xD;&#xA;" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Caixa de Entrada" BrowserFolderId="AQMkADAwATY3ZmYAZS1iZjkyLWRjNGQtMDACLTAwCgAuAAADgmt5jRrqi02UNGvo8wyswgEAy0107eTiLUC5Fwjt9ZNDlAAAAgEMAAAA" ConnectionId="44ad19d3-3e35-4475-b1df-d578550baea0" DisplayName="Get Email List" EmailList="[EmailMessages]" sap:VirtualizedContainerService.HintSize="450,516.6666666666666" sap2010:WorkflowViewState.IdRef="GetEmailListConnections_2" Importance="Any" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" OrderByDate="NewestFirst" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" UseSharedMailbox="False" WithAttachmentsOnly="False">
+    <umam:GetEmailListConnections ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ManualEntryFolder="{x:Null}" sap2010:Annotation.AnnotationText="obtains emails related to the applied filters.&#xA;&#xA;Here you can feel free to add your own filters and your email.&#xA;&#xA;Remembering that it is necessary to connect UiPath to Outlook and obtain authorization.&#xA;&#xA;It is possible to do this right here in the activity&#xA;&#xA;In Microsoft Outlook 365, just click on the gear and manage your connections&#xA;" AuthScopesInvalid="False" BodyAsHtml="False" BrowserFolder="Caixa de Entrada" BrowserFolderId="AQMkADAwATY3ZmYAZS1iZjkyLWRjNGQtMDACLTAwCgAuAAADgmt5jRrqi02UNGvo8wyswgEAy0107eTiLUC5Fwjt9ZNDlAAAAgEMAAAA" DisplayName="Get Email List" EmailList="[EmailMessages]" sap:VirtualizedContainerService.HintSize="450,485" sap2010:WorkflowViewState.IdRef="GetEmailListConnections_2" Importance="Any" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" OrderByDate="NewestFirst" SelectionMode="Browse" UnreadOnly="False" UseConnectionService="True" UseSharedMailbox="False" WithAttachmentsOnly="False">
       <umam:GetEmailListConnections.Filter>
         <umamf:MailFilterCollection LogicalOperator="And">
           <umamf:MailFilterCollection.Filters>
@@ -170,13 +171,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </umam:GetEmailListConnections>
-    <ui:ForEach x:TypeArguments="umm:Office365Message" CurrentIndex="{x:Null}" DisplayName="For Each Email Message" sap:VirtualizedContainerService.HintSize="450,597.3333333333334" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[EmailMessages]">
+    <ui:ForEach x:TypeArguments="umm:Office365Message" CurrentIndex="{x:Null}" DisplayName="For Each Email Message" sap:VirtualizedContainerService.HintSize="450,593" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[EmailMessages]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="umm:Office365Message">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="umm:Office365Message" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="obtains due date and amount information for each invoice found&#xD;&#xA;&#xD;&#xA;Use regular expressions in the body of the email to obtain the values." DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,397.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence sap2010:Annotation.AnnotationText="obtains due date and amount information for each invoice found&#xA;&#xA;Use regular expressions in the body of the email to obtain the values." DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,397.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="ReceivedDate" />
               <Variable x:TypeArguments="x:String" Name="Content" />

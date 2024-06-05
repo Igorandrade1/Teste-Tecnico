@@ -20829,15 +20829,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\igor.andrade\\.nuget\\packages\\": {}
+    "C:\\Users\\igor.rpa\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "WaterBillControl-RPA",
       "projectName": "WaterBillControl-RPA",
-      "projectPath": "C:\\Users\\igor.andrade\\Documents\\UiPath\\WaterBillControl-RPA\\.local",
-      "packagesPath": "C:\\Users\\igor.andrade\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igor.andrade\\Documents\\UiPath\\WaterBillControl-RPA\\.local"
+      "projectPath": "C:\\Users\\igor.rpa\\Documents\\UiPath\\Teste-Tecnico\\.local",
+      "packagesPath": "C:\\Users\\igor.rpa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\igor.rpa\\Documents\\UiPath\\Teste-Tecnico\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -20868,7 +20868,7 @@
             "version": "[24.4.1-preview, 24.4.1-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\igor.andrade\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\igor.rpa\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

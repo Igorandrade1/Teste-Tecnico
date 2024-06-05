@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>845.3333333333334,852</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>830,871</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -102,7 +102,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Workflow used to send the invoice due date notification email" DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="496,787.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflow used to send the invoice due date notification email" DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="496,806" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(x:String)" Default="[{&quot;igor.freitas2999@hotmail.com&quot;}]" Name="RecipientEmail" />
       <Variable x:TypeArguments="x:String" Name="BodyText" />
@@ -113,7 +113,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap2010:Annotation.AnnotationText="In the body of the email it is possible to insert information using HTML and CSS, so I used assign to create it, there are other options, but it is the one I like to use." DisplayName="Assemble the email body text" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="In the body of the email it is possible to insert information using HTML and CSS, so I used assign to create it, there are other options, but it is the one I like to use." DisplayName="Assemble the email body text" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[BodyText]</OutArgument>
       </Assign.To>
@@ -139,7 +139,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[BodyText]" ConnectionId="44ad19d3-3e35-4475-b1df-d578550baea0" DisplayName="Send Notice Email" sap:VirtualizedContainerService.HintSize="434,488.6666666666667" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="[UiPath.MicrosoftOffice365.Activities.Mail.Enums.Importance.High]" InputType="HTML" SaveAsDraft="False" Subject="Invoice due date notice" To="[RecipientEmail]" UseConnectionService="True" UseSharedMailbox="False">
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" sap2010:Annotation.AnnotationText="In the &quot;Recipient Email&quot; variable, put the value within {example@provider.com}" AttachmentInputMode="Existing" AttachmentPaths="{x:Null}" Attachments="{x:Null}" AuthScopesInvalid="False" Bcc="{x:Null}" Body="[BodyText]" Cc="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Send Notice Email" sap:VirtualizedContainerService.HintSize="434,515" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="[UiPath.MicrosoftOffice365.Activities.Mail.Enums.Importance.High]" InputType="HTML" Mailbox="{x:Null}" ReplyTo="{x:Null}" SaveAsDraft="False" SingleAttachment="{x:Null}" Subject="Invoice due date notice" TextBody="{x:Null}" To="[RecipientEmail]" UseConnectionService="True" UseSharedMailbox="False">
       <umam:SendMailConnections.AttachmentsBackup>
         <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
           <usau:BackupSlot.BackupValues>
@@ -165,6 +165,7 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </umam:SendMailConnections>
